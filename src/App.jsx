@@ -236,7 +236,7 @@ export default function App() {
       const sampleEvents = parseCsv(SAMPLE_CSV);
       setEvents(sampleEvents);
       setCsvData(''); // Set to empty to trigger yellow badge
-      handleCloseModal();
+      setTempCsvData(''); // Clear the textarea without closing modal
     } catch (error) {
       console.error("Error clearing data from localStorage:", error);
     }
